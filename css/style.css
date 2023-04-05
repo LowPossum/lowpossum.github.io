@@ -1,0 +1,164 @@
+/* Fonts implementation */
+@font-face {
+  font-family: "Lovelo Black";
+  src: local("Lovelo Black"),
+    url("../fonts/Lovelo-Black.ttf") format("opentype")
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue"),
+    url("../fonts/BebasNeue-Regular.ttf") format("opentype")
+}
+
+/* Ensuring fullscreen size */
+html, body {
+  height: 100%;
+}
+
+/* Prevents dots from lists */
+ul, li{
+	list-style-type: none;:
+}
+
+/* Organisation of the main page */
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Makes the top menu always on top */
+#navbar {
+  top:0;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(5px):
+}
+
+/* Define the looks of the top menu */
+.top_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
+  gap: 59%;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Dropdown menu and top menu */
+.menu_wrap{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.menu {
+	font: 2em "Bebas Neue", sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li, .menu a{
+	text-decoration: none;
+	color: #253439;
+}
+
+.menu li:hover, .menu a:hover{
+	text-decoration: none;
+	color: #ff6d13;
+}
+
+#drop_menu {
+  display:none;
+}
+
+.menu_item:hover #drop_menu{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font: 0.9em "Bebas Neue", sans-serif;
+  height: 100px;
+  width: 250px;
+  top: 75px;
+  right: 315px;
+  padding-left: 4px;
+  position: absolute;
+  background-color: #253439;
+  border-top-color: #ff6d13;
+  border-top-style: solid;
+  border-top-color: #ff6d13;
+  border-top-width: 4px;
+  transition: 0.5s;
+}
+
+.menu_item a, a:visited {
+  text-decoration: none;
+  color: #253439;
+}
+
+.menu_item a:hover, a:active {
+  text-decoration: none;
+  color: #ff6d13;
+}
+
+.drop_menu_item:hover {
+	color: #ff6d13;
+}
+.drop_menu_item a {
+  color: white;
+}
+
+.logo {
+  height: 100px;
+  margin: 10px;
+}
+
+.background{
+  background-image: url("../img/background.png");
+	background-attachment: fixed;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  font: 4em "Lovelo Black", sans-serif;
+  letter-spacing: 20px;
+  color: #ff6d13;
+}
+
+.sub_title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -140px;
+  width: 755px;
+  font: 2em "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+  color: #253439;
+}
+
+.first_sub {
+  margin-bottom: -50px;
+}
+
+.catchphrase {
+  margin-top: 250px;
+  font: 1.6em "Bebas Neue", sans-serif;
+  color: #ff6d13;
+}
