@@ -41,8 +41,8 @@ ul, li{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   position: fixed;
-  gap: 59%;
   top: 0;
   width: 100%;
   height: auto;
@@ -53,6 +53,7 @@ ul, li{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+  margin-right: 10px;
 }
 
 .menu {
@@ -161,4 +162,24 @@ ul, li{
   margin-top: 250px;
   font: 1.6em "Bebas Neue", sans-serif;
   color: #ff6d13;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 120px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.pictures div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-right: 200px;
+  padding-left: 120px;
+  height: 45vh;
+  width: 10vw;
 }
