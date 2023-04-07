@@ -77,7 +77,8 @@ ul, li{
 	color: #253439;
 }
 
-.menu li:hover, .menu a:hover{
+.menu li:hover, .menu a:hover, .menu a:active{
+  font: 1em "Bebas Neue", sans-serif;
 	text-decoration: none;
 	color: #ff6d13;
 }
@@ -112,6 +113,7 @@ ul, li{
 }
 
 .menu_item a:hover, a:active {
+  font: 1em "Bebas Neue", sans-serif;
   text-decoration: none;
   color: #ff6d13;
 }
@@ -287,7 +289,7 @@ ul, li{
 
 .contact:hover {
    background: #FF6D13;
-   border: solid #FF6D13 5px;
+   border: solid #FF6D13 3px;
    -webkit-border-radius: 0;
    -moz-border-radius: 0;
    border-radius: 0;
